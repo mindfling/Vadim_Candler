@@ -1,2 +1,132 @@
 /* my styles */
 
+* {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+.page {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Yeseva One', cursive;
+  font-family: 'Comfortaa', cursive;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #000;
+  
+}
+
+.header,
+.footer {
+  display: flex;
+  margin: auto;
+}
+
+.header {
+  min-height: 70px;
+}
+.footer {
+  min-height: 165px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: max-content;
+  min-width: 1162px;
+}
+
+.header__container {
+  border: 1px solid lawngreen;
+}
+.footer__container {
+  border: 1px solid orange;
+}
+
+
+.menu {
+  display: flex;
+}
+.menu__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
+}
+.menu__item {
+  display: flex;
+}
+.menu__link {
+  display: flex;
+  color: #000;
+  text-decoration: none;
+  /* текст 14 */
+  font-family: Comfortaa;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+
+.header__phone {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.logo {
+  display: flex;
+  width: 70px;
+  height: 70px;
+}
+
+.link {
+  color: #000;
+  text-decoration: none;
+  font-family: Comfortaa, cursive;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+
+.footer__logo {
+  display: flex;
+  width: 70px;
+  height: 70px;
+  background-image: url(../img/logo-candler-70.png);
+  background-size: cover;
+  background-position: center;
+}
+.footer__contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 17px;
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  list-style: none;
+}
