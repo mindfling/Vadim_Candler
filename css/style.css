@@ -1,5 +1,13 @@
-/* my styles */
+/* my variables */
+:root {
+  --black: #000;
+  --white: #fafafa;
+  --pink: #FFF8F3;
+  --orange: #FFBD59;
+}
 
+
+/* my styles */
 * {
   box-sizing: inherit;
 }
@@ -20,21 +28,8 @@ html {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  color: #000;
-  
-}
-
-.header,
-.footer {
-  display: flex;
-  margin: auto;
-}
-
-.header {
-  min-height: 70px;
-}
-.footer {
-  min-height: 165px;
+  color: var(--black, #000);
+  background-color: var(--white, #fff);
 }
 
 .container {
@@ -44,15 +39,39 @@ html {
   align-items: center;
   width: max-content;
   min-width: 1162px;
+  background-color: var(--pink);
+}
+
+
+
+/*
+ * header
+ */
+.header {
+  display: flex;
+  margin: auto;
+  min-height: 70px;
 }
 
 .header__container {
   border: 1px solid lawngreen;
 }
-.footer__container {
-  border: 1px solid orange;
-}
 
+
+
+
+.link {
+  color: #000;
+  text-decoration: none;
+  font-family: Comfortaa, cursive;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.link:hover {
+  opacity: .7;
+}
 
 .menu {
   display: flex;
@@ -87,6 +106,12 @@ html {
   justify-content: space-between;
   align-items: center;
 }
+.header__phone-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2px;
+}
 
 
 .logo {
@@ -94,25 +119,33 @@ html {
   width: 70px;
   height: 70px;
 }
+.logo__img {
+  width: 70px;
+  height: 70px;
+}
 
-.link {
-  color: #000;
-  text-decoration: none;
-  font-family: Comfortaa, cursive;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+
+
+/*
+ * footer
+ */
+.footer {
+  display: flex;
+  margin: auto;
+  min-height: 165px;
+}
+.footer__container {
+  border: 1px solid orange;
 }
 
 
 .footer__logo {
-  display: flex;
+  display: block;
   width: 70px;
   height: 70px;
-  background-image: url(../img/logo-candler-70.png);
-  background-size: cover;
-  background-position: center;
+  /* background-image: url(../img/logo-candler-70.png); */
+  /* background-size: cover; */
+  /* background-position: center; */
 }
 .footer__contacts {
   display: flex;
@@ -130,3 +163,5 @@ html {
   gap: 15px;
   list-style: none;
 }
+
+
