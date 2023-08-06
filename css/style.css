@@ -25,12 +25,6 @@ a {
 
 .page {
   display: block;
-  /* display: flex; */
-  /* justify-content: start; */
-  /* align-items: center; */
-  /* flex-direction: column; */
-  /* font-family: 'Roboto', sans-serif; */
-  /* font-family: 'Yeseva One', cursive; */
   font-family: 'Comfortaa', cursive;
   font-size: 14px;
   font-style: normal;
@@ -50,7 +44,7 @@ a {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid green;
+  /* border: 1px solid green; */
 }
 
 
@@ -69,7 +63,7 @@ a {
 }
 
 .header__container {
-  border: 1px solid lawngreen;
+  /* border: 1px solid lawngreen; */
 }
 
 
@@ -127,10 +121,21 @@ a {
   align-items: center;
 }
 .header__phone-link {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 2px;
+}
+.header__phone-link::before {
+  position: absolute;
+  left: -20px;
+  top: -1px;
+  display: block;
+  content: "";
+  width: 16px;
+  height: 16px;
+  background: url(../img/vector-tel.svg) center no-repeat;
 }
 
 
@@ -170,6 +175,7 @@ section {
   font-style: normal;
   font-size: 22px;
   margin-bottom: 20px;
+  color: #1e1e1e;
 }
 .hero__text {
   display: flex;
@@ -205,7 +211,7 @@ section {
   background-color: var(--pink);
 }
 .footer__container {
-  border: 1px solid orange;
+  /* border: 1px solid orange; */
 }
 
 
@@ -231,3 +237,8 @@ section {
   list-style: none;
 }
 
+
+::selection {
+  background-color: var(--orange);
+  color: var(--white);
+}
